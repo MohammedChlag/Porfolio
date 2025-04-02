@@ -4,6 +4,12 @@ Este es el repositorio de mi portafolio web, desarrollado con [Astro](https://as
 
 ---
 
+## ✨ Vista previa
+
+![Vista previa del portafolio](./screenshot.jpg)
+
+---
+
 ## 🚀 Tecnologías utilizadas
 
 - 🪐 **[Astro](https://astro.build/)** – Framework moderno para sitios web rápidos y estáticos.
