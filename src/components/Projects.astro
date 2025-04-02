@@ -1,0 +1,73 @@
+---
+import ReactIcon from "../icons/ReactIcon.astro";
+import NodeIcon from "../icons/NodeIcon.astro";
+import ExpressIcon from "../icons/ExpressIcon.astro";
+import MysqlIcon from "../icons/MysqlIcon.astro";
+import TailwindIcon from "../icons/TailwindIcon.astro";
+
+const TAGS = {
+    REACT: {
+        name: "React",
+        class: "bg-blue-500 text-white",
+        icon: ReactIcon,
+    },
+    NODE: {
+        name: "Node.js",
+        class: "bg-green-500 text-white",
+        icon: NodeIcon,
+    },
+    EXPRESS: {
+        name: "Express",
+        class: "bg-yellow-400/80 text-white",
+        icon: ExpressIcon,
+    },
+    MYSQL: {
+        name: "MySQL",
+        class: "bg-blue-700 text-white",
+        icon: MysqlIcon,
+    },
+    TAILWIND: {
+        name: "Tailwind CSS",
+        class: "bg-blue-400 text-white",
+        icon: TailwindIcon,
+    },
+}
+const PROJECTS = [
+  {
+    title: "Hackloud - Disco duro online",
+    description:
+    "Aplicación web para almacenar archivos en la nube. Con sistema de autenticación, diseño responsive y funcionalidades de subida, descarga y compartición de archivos.",
+    link: "https://hackloud.netlify.app/",
+    github: "https://github.com/MohammedChlag/Proyecto-Disco-Duro-FRONT",
+    image: "../../public/projects/Hackloud.jpg",
+    tags: [
+      TAGS.REACT,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.MYSQL,
+      TAGS.TAILWIND,
+    ],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, image, tags }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex flex-wrap gap-x-2 mb-4">
+  {tags.map((tag) => (
+    <li>
+      <span class={`${tag.class} flex items-center gap-x-2 text-xs rounded-full px-2 py-1`}>
+        <tag.icon class="size-4" />
+        {tag.name}
+      </span>
+    </li>
+  ))}
+</ul>
+
+      <img class="rounded shadow-2xl shadow-white/10" src={image} alt=`Captura de pantalla del proyecto ${title}` />
+    </article>
+  ))
+}

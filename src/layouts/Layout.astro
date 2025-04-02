@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+import "@fontsource-variable/onest";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Contrata a Mohammed para crear tu aplicación web. Desarrollador web fullstack junior."
+    />
+    <meta name="author" content="Mohammed Chikri Laghzaoui" />
+    <meta
+      name="keywords"
+      content="Desarrollador, programador, web, fullstack, junior"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portafolio de Mohammed - Desarrollador y programador Web</title>
+  </head>
+  <body>
+    <div
+      class="fixed top-0 left-0 z-[-2] w-screen min-h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
+    </div>
+
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

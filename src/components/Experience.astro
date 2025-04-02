@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualidad",
+    title: "Desarrollador web (proyectos personales)",
+    description:
+      "Actualmente estoy desarrollando proyectos web personales para ganar experiencia práctica, mejorar mis habilidades y prepararme para oportunidades profesionales en el sector.",
+  },
+  {
+    date: "Septiembre 2024 - febrero 2025",
+    title: "Formación como desarrollador web",
+    description:
+      "Me formé intensivamente en desarrollo web fullstack, adquiriendo conocimientos sólidos en tecnologías como JavaScript, Node.js, React, Tailwind CSS y bases de datos.",
+    link: "https://github.com/MohammedChlag",
+  },
+  {
+    date: "Enero 2018 - Julio 2024",
+    title: "Autónomo en comercio textil al por mayor",
+    description:
+      "Gestioné un negocio propio de distribución textil, desarrollando habilidades en ventas, negociación, atención al cliente y gestión logística.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => {
+      return (
+        <li class="mb-10 ms-4">
+          <ExperienceItem {...experience} />
+        </li>
+      );
+    })
+  }
+</ol>

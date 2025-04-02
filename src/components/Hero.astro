@@ -1,0 +1,56 @@
+---
+import GithubIcon from "../icons/GithubIcon.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import Mail from "../icons/Mail.astro";
+import Badge from "./Badge.astro";
+import SocialPill from "./SocialPill.astro";
+---
+
+<img
+  class="rounded-full size-12 mb-2"
+  src="https://avatars.githubusercontent.com/u/183321116?v=4"
+  alt="Mohammed Chikri Laghzaoui"
+/>
+<h1
+  class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-5 lg:pb-10"
+>
+  Hey, soy Moha
+  <a
+    href="https://www.linkedin.com/in/mohammed-chikri-laghzaoui-780773328/"
+    target="_blank"
+    rel="noopener"
+    class="flex justify-center items-center"
+  >
+    <Badge>Disponible para trabajar</Badge>
+  </a>
+</h1>
+<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+  <span class="text-yellow-200/90">desarrollador web fullstack junior</span>
+  <span class="opacity-25">(por ahora...)</span>.<br />
+  <span class="text-red-200/90">De Alicante, España.</span>
+  <span class="text-blue-200/90">
+    Sigo especializándome en el desarrollo de web únicas, robustas y escalables.
+    Me gusta trabajar en equipo y colaborar con otros desarrolladores para crear
+    soluciones innovadoras.
+  </span><br />
+  <span class="text-green-200">
+    ¡Si estás buscando un desarrollador web apasionado y comprometido, no dudes
+    en ponerte en contacto conmigo!
+  </span>
+</h2>
+<nav class="flex flex-row flex-wrap gap-4 mt-6">
+  <SocialPill
+    href="https://www.linkedin.com/in/mohammed-chikri-laghzaoui-780773328/"
+  >
+    <LinkedInIcon class="size-4 md:size-6" />
+    LinkedIn
+  </SocialPill>
+  <SocialPill href="https://github.com/MohammedChlag">
+    <GithubIcon class="size-4 md:size-6" />
+    GitHub
+  </SocialPill>
+  <SocialPill href="mailto:mohammedchikrilag@icloud.com">
+    <Mail class="size-4 md:size-6" />
+    mohammedchikrilag@icloud.com
+  </SocialPill>
+</nav>
