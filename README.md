@@ -1,48 +1,47 @@
-# Astro Starter Kit: Basics
+# 🌐 Mi Portafolio Personal
 
-```sh
-bun create astro@latest -- --template basics
+Este es el repositorio de mi portafolio web, desarrollado con [Astro](https://astro.build/) y usando [Bun](https://bun.sh/) como entorno de desarrollo. Aquí muestro quién soy, mi experiencia profesional y algunos proyectos personales.
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+- 🪐 **[Astro](https://astro.build/)** – Framework moderno para sitios web rápidos y estáticos.
+- ⚡ **[Bun](https://bun.sh/)** – Runtime ultrarrápido para desarrollo y ejecución.
+- 🎨 **Tailwind CSS** – Para el diseño y estilos del sitio.
+- 📦 Componentes personalizados y optimizaciones para buen rendimiento.
+
+---
+
+## 🛠 Instalación y ejecución local
+
+1. **Clona el repositorio:**
+
+```bash
+git clone https://github.com/MohammedChlag/Porfolio
+cd Porfolio
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+2. **Instala las dependencias:**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+bun install
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. **Ejecuta el sitio en desarrollo:**
 
-## 🧞 Commands
+```bash
+bun dev
+```
 
-All commands are run from the root of the project, from a terminal:
+4. **Abre el navegador en:**  
+[http://localhost:4321](http://localhost:4321)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## 🧑‍💻 Autor
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Mohammed Chikri Laghzaoui**  
+📍 Alicante, España  
+🔗 [LinkedIn](https://www.linkedin.com/in/mohammed-chikri-laghzaoui-780773328/)  
+🔗 [GitHub](https://github.com/MohammedChlag)
