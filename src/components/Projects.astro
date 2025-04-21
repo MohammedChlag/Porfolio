@@ -57,7 +57,6 @@ const PROJECTS = [
     title: "Travel Diary Api - Comparte tus viajes!",
     description:
     "Travel Diary Api, la aplicación que te permite registrar y compartir tus experiencias de viaje. Deja que el resto del mundo valore tu viaje.",
-    link: "https://hackloud.netlify.app/",
     github: "https://github.com/MohammedChlag/Proyecto-Travel-Diary-Front",
     image: "../../public/projects/TravelDiary.jpg",
     tags: [
@@ -87,7 +86,7 @@ const PROJECTS = [
     title: "Hackoji - Juego de memoria",
     description: "Juego de memoria con sistema de puntuación y diseño responsivo.",
     link: "https://hackoji.netlify.app/",
-    github: "https://github.com/MohammedChlag/Proyecto-Juego-Memoria",
+    github: "https://github.com/MohammedChlag/Proyecto-Parejas-Emojis",
     image: "../../public/projects/Hackoji.jpg",
     tags: [
       TAGS.HTML,
@@ -99,7 +98,7 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ title, description, image, tags, link = "#", github = "#" }) => (
+  PROJECTS.map(({ title, description, image, tags, link = "#proyectos", github = "#" }) => (
     <article>
       <a href={link}
       target="_blank"
@@ -108,12 +107,12 @@ const PROJECTS = [
           {title}
         </h3>
       </a>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <p class="text-lg mb-4 text-white text-pretty">{description}</p>
       <SocialPill href={github}>
     <GithubIcon class="size-4 md:size-6" />
     GitHub
   </SocialPill>
-      <ul class="flex flex-wrap gap-x-2 m-4">
+      <ul class="flex flex-wrap gap-2 m-4">
   {tags.map((tag) => (
     <li>
       <span class={`${tag.class} flex items-center gap-x-2 text-xs rounded-full px-2 py-1`}>
